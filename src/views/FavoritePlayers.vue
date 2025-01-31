@@ -144,6 +144,7 @@ export default {
     align-items: flex-start;
   }
 
+
   .player-link {
     margin-bottom: 1rem;
   }

@@ -1,0 +1,49 @@
+@import './base.css';
+
+/* Set a background color for the body and html elements */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0; /* Light Gray Background */
+  font-family: 'Arial', sans-serif;
+  color: #444444; /* Charcoal Gray text */
+  overflow-x: hidden;
+}
+
+/* Ensure app takes full width */
+#app {
+  width: 100vw; /* Full width of the viewport */
+  margin: 0;
+  padding: 0; /* Remove any padding */
+  font-weight: normal;
+}
+
+a {
+  color: #1E90FF; /* Soft Blue */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #4682B4; /* Lighter Blue on hover */
+  background-color: rgba(30, 144, 255, 0.2); /* Soft highlight on hover */
+}
+
+.green {
+  color: #1E90FF;
+}
+
+/* Optional: Adjust layout on larger screens */
+@media (min-width: 1024px) {
+  body {
+    place-items: center;
+  }
+
+  #app {
+    display: block; /* Remove grid */
+    width: 100%; /* Ensure full width */
+    padding: 0; /* Remove padding */
+  }
+}
